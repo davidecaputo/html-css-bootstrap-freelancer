@@ -1,5 +1,6 @@
 :root{
     --bg-header:#2c3e50;
+    --bg-footer:#3a546d;
     --bg-section:#1abc9c;
     --text-color:#333333;
     --star-color:#2c3e50;
@@ -9,6 +10,29 @@ header{
     background-color: var(--bg-header);
 }
 
+.star::after, .star::before{
+    content: '';
+    display: block;
+    width: 10%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: white;
+    margin: 20px 20px;
+}
+
+.portfolio .star::after, .portfolio .star::before,
+.contact .star::after, .contact .star::before{
+    background-color: var(--star-color);
+}
+
 .start, .about{
     background-color: var(--bg-section);
+}
+
+.footer-top{
+    background-color: var(--bg-footer);
+}
+
+.footer-bottom{
+    background-color: var(--bg-header);
 }
