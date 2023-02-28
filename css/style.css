@@ -9,6 +9,6 @@ header{
     background-color: var(--bg-header);
 }
 
-.start{
+.start, .about{
     background-color: var(--bg-section);
 }
